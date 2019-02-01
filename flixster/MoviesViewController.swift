@@ -8,6 +8,7 @@
 
 import UIKit
 
+//import data and delegate for table view
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
@@ -37,6 +38,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 
                 //results from movies API are now stored in movies variable
                 self.movies = dataDictionary["results"] as! [[String:Any]]
+                
+                //call all functions below again
+                self.tableView.reloadData()
                 print(dataDictionary)
                 
                 // TODO: Get the array of movies
@@ -50,13 +54,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String
         
-        cell.textLabel?.text = "row: \(indexPath.row)"
+        
+        cell.textLabel?.text = title
         
         return cell
     }
