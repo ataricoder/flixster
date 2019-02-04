@@ -2,7 +2,7 @@
 //  MovieCell.swift
 //  flixster
 //
-//  Created by Dany Munoz on 2/1/19.
+//  Created by ataricoder on 2/4/19.
 //  Copyright © 2019 danielmunoz. All rights reserved.
 //
 
