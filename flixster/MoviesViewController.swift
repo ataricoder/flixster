@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AlamofireImage
+
 
 //import data and delegate for table view
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -58,6 +60,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //recycle cells, good practice for tables with many cells used
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String
@@ -67,6 +70,17 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //cell.textLabel?.text = title
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
+        
+        //add image with 185px size
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        
+        
+        
+        
+        
         
         return cell
     }
