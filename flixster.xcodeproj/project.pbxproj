@@ -18,6 +18,7 @@
 		3B405F542204274B000BC13F /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405F532204274B000BC13F /* MoviesViewController.swift */; };
 		9F2B65DFC54BF67F0129CB07 /* Pods_flixsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C852D84C66EE543A4B08B24C /* Pods_flixsterUITests.framework */; };
 		D3A72ADC220900570018C3FA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A72ADB220900570018C3FA /* MovieCell.swift */; };
+		D3BB183C221244F4003756F9 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BB183B221244F4003756F9 /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		AC63F1FDB70EAA3290B00EF4 /* Pods_flixster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C852D84C66EE543A4B08B24C /* Pods_flixsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A72ADB220900570018C3FA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		D3BB183B221244F4003756F9 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				3B405F2C220425A3000BC13F /* Assets.xcassets */,
 				3B405F31220425A3000BC13F /* Info.plist */,
 				D3A72ADB220900570018C3FA /* MovieCell.swift */,
+				D3BB183B221244F4003756F9 /* MovieDetailsViewController.swift */,
 			);
 			path = flixster;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BB183C221244F4003756F9 /* MovieDetailsViewController.swift in Sources */,
 				3B405F26220425A0000BC13F /* AppDelegate.swift in Sources */,
 				3B405F542204274B000BC13F /* MoviesViewController.swift in Sources */,
 				D3A72ADC220900570018C3FA /* MovieCell.swift in Sources */,
